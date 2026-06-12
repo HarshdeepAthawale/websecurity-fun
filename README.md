@@ -44,7 +44,7 @@ You already know what a browser is and roughly how the internet works. You're cu
    └── Case-Studies/ → 7 real reports: GraphQL unauth, supply chain RCE, JWT bypass, brute force, info disclosure, CORS, recon methodology
 ```
 
-**77 notes** across all sections. Everything is cross-linked — follow `[[wikilinks]]` in Obsidian and use the graph view to see how it all connects.
+**71 notes** across all sections. Everything is cross-linked — follow `[[wikilinks]]` in Obsidian and use the graph view to see how it all connects.
 
 The `Case-Studies/` section is built from real submitted bug bounty reports (sanitized). If you want to understand what actual findings look like — how the researcher found it, how the report was written, what the triager said — start there.
 
