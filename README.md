@@ -26,15 +26,23 @@ You already know what a browser is and roughly how the internet works. You're cu
 ## What's inside
 
 ```
-00-Setup/        → start here
-01-Basics/       → how the web works, HTTP, browser security model
-02-Recon/        → finding attack surface before you attack
-03-OWASP-Top-10/ → the 10 most critical web vulnerabilities
-04-Vuln-Classes/ → deep dives into each vuln type
-05-Tools/        → Burp Suite, ffuf, and the rest
-06-Labs/         → walkthroughs and practice
-99-Cheatsheets/  → quick reference
+00-Setup/          → start here
+01-Basics/         → HTTP, cookies, browser security model, SOP, CORS, CSP
+02-Recon/          → subdomain enum, fingerprinting, JS recon, OSINT, ffuf
+03-OWASP-Top-10/   → all 10 entries with real testing guidance
+04-Vuln-Classes/   → deep dives with payloads and exploitation
+   ├── XSS/        → reflected, stored, DOM, filter bypass
+   ├── SQL-Injection/ → error-based, blind, to-RCE
+   ├── SSRF/       → techniques + full bypass reference
+   ├── IDOR, CSRF, Path Traversal, XXE, SSTI
+   ├── JWT Attacks, OAuth, HTTP Request Smuggling
+   ├── GraphQL, Business Logic, Prototype Pollution
+05-Tools/          → Burp Suite (proxy, intruder, extensions)
+06-Labs/           → walkthroughs and write-ups (growing)
+99-Cheatsheets/    → XSS payloads, SQLi, SSRF bypass, WAF bypass, recon commands
 ```
+
+**66 notes** across all sections. Everything is cross-linked — follow `[[wikilinks]]` in Obsidian and use the graph view to see how it all connects.
 
 Reading alone won't make you good at this. Use these notes alongside actual practice — TryHackMe, HackTheBox, PortSwigger Web Academy labs. The notes tell you the theory; the labs build the muscle memory.
 
