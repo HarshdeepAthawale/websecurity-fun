@@ -41,9 +41,12 @@ You already know what a browser is and roughly how the internet works. You're cu
 06-Labs/           → walkthroughs and write-ups (growing)
 07-Bug-Bounty/     → Bugcrowd VRT v1.18 reference, severity guide, reporting guide
    ├── New-Vuln-Classes/ → AI Security, Cloud Security, Crypto Weaknesses, Race Conditions, Smart Contracts
+   └── Case-Studies/ → 7 real reports: GraphQL unauth, supply chain RCE, JWT bypass, brute force, info disclosure, CORS, recon methodology
 ```
 
-**69 notes** across all sections. Everything is cross-linked — follow `[[wikilinks]]` in Obsidian and use the graph view to see how it all connects.
+**77 notes** across all sections. Everything is cross-linked — follow `[[wikilinks]]` in Obsidian and use the graph view to see how it all connects.
+
+The `Case-Studies/` section is built from real submitted bug bounty reports (sanitized). If you want to understand what actual findings look like — how the researcher found it, how the report was written, what the triager said — start there.
 
 Reading alone won't make you good at this. Use these notes alongside actual practice — TryHackMe, HackTheBox, PortSwigger Web Academy labs. The notes tell you the theory; the labs build the muscle memory.
 

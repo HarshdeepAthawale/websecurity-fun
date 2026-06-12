@@ -1,6 +1,6 @@
 # Bugcrowd VRT — Overview
 
-**Overview** | [[VRT-Quick-Reference]] | [[Severity-Guide]] | [[Reporting-Guide]]
+**Overview** | [[VRT-Quick-Reference]] | [[Severity-Guide]] | [[Reporting-Guide]] | [[Case-Studies-Overview]]
 
 ---
 
@@ -83,6 +83,23 @@ The VRT covers categories that OWASP barely touches:
 3. **Check the baseline P-rating**
 4. **Read [[Severity-Guide]]** — does your specific scenario match the variant, or is it higher/lower?
 5. **Write the report** using [[Reporting-Guide]] with the correct severity
+6. **See it in practice** in [[Case-Studies-Overview]] — real reports with VRT severity reasoning
+
+---
+
+## Real Bug Bounty Case Studies
+
+The `Case-Studies/` folder contains 7 case studies built from real submitted reports, showing exactly how the VRT maps to actual findings:
+
+| Case Study | VRT Category | P-Rating |
+|-----------|-------------|---------|
+| [[CS-01-GraphQL-Unauthenticated]] | Sensitive Data Exposure → Credentials | P2 |
+| [[CS-02-Supply-Chain-Dependency-Confusion]] | Broken Access Control → Supply Chain | P1 |
+| [[CS-03-JWT-Auth-Bypass-And-NA-Lesson]] | Broken Auth → JWT issues | HIGH / N/A |
+| [[CS-04-Brute-Force-And-Hardcoded-Creds]] | Broken Auth → Rate Limiting + Hardcoded Creds | P2 |
+| [[CS-05-Information-Disclosure-Chain]] | Information Disclosure → Technical | P3 |
+| [[CS-06-CORS-Misconfiguration]] | CORS Misconfiguration | P4 |
+| [[CS-07-Real-Hunt-Recon-Methodology]] | Methodology | — |
 
 ---
 
