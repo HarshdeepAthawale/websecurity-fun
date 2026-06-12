@@ -26,22 +26,34 @@ You already know what a browser is and roughly how the internet works. You're cu
 ## What's inside
 
 ```
-00-Setup/          → start here
-01-Basics/         → HTTP, cookies, browser security model, SOP, CORS, CSP
-02-Recon/          → subdomain enum, fingerprinting, JS recon, OSINT, ffuf
-03-OWASP-Top-10/   → all 10 entries with real testing guidance
-04-Vuln-Classes/   → deep dives with payloads and exploitation
-   ├── XSS/        → reflected, stored, DOM, filter bypass
-   ├── SQL-Injection/ → error-based, blind, to-RCE
-   ├── SSRF/       → techniques + full bypass reference
+00-Setup/              → start here
+01-Basics/             → HTTP, cookies, browser security model, SOP, CORS, CSP
+02-Recon/              → subdomain enum, fingerprinting, JS recon, OSINT, ffuf
+03-OWASP-Top-10/       → all 10 entries with real testing guidance
+04-Vuln-Classes/       → deep dives with payloads and exploitation
+   ├── XSS/            → reflected, stored, DOM, filter bypass
+   ├── SQL-Injection/  → error-based, blind, to-RCE
+   ├── SSRF/           → techniques + full bypass reference
    ├── IDOR, CSRF, Path Traversal, XXE, SSTI
    ├── JWT Attacks, OAuth, HTTP Request Smuggling
-   ├── GraphQL, Business Logic, Prototype Pollution
-05-Tools/          → Burp Suite (proxy, intruder, extensions)
-06-Labs/           → walkthroughs and write-ups (growing)
-07-Bug-Bounty/     → Bugcrowd VRT v1.18 reference, severity guide, reporting guide
-   ├── New-Vuln-Classes/ → AI Security, Cloud Security, Crypto Weaknesses, Race Conditions, Smart Contracts
-   └── Case-Studies/ → 7 real reports: GraphQL unauth, supply chain RCE, JWT bypass, brute force, info disclosure, CORS, recon methodology
+   └── GraphQL, Business Logic, Prototype Pollution
+05-Tools/              → Burp Suite (proxy, intruder, extensions)
+06-Labs/               → walkthroughs and write-ups (growing)
+07-Bug-Bounty/         → Bugcrowd VRT v1.18 reference, severity guide, reporting guide
+   ├── New-Vuln-Classes/
+   │   ├── AI Security          → prompt injection, model extraction, LLM vulns
+   │   ├── Cloud Security       → IAM misconfigs, S3, exposed services
+   │   ├── Cryptographic Weaknesses → padding oracle, timing attacks, key reuse
+   │   ├── Race Conditions      → TOCTOU, gift card abuse, Turbo Intruder
+   │   └── Smart Contracts      → reentrancy, flash loans, oracle manipulation
+   └── Case-Studies/            → real submitted reports, sanitized for learning
+       ├── CS-01  Unauthenticated GraphQL / Directus CMS          (P2)
+       ├── CS-02  Artifactory Anon Access → Supply Chain RCE       (P1)
+       ├── CS-03  JWT Bypass on Mgmt API + why it got closed N/A  (HIGH)
+       ├── CS-04  PIN Brute Force + Hardcoded Creds in JS Bundle  (P2)
+       ├── CS-05  ASP.NET Verbose Errors → Recon Escalation Chain  (P3)
+       ├── CS-06  CORS Origin Reflection + Null Origin             (P4)
+       └── CS-07  Full Real Hunt — Recon Methodology (5900 domains)
 ```
 
 **71 notes** across all sections. Everything is cross-linked — follow `[[wikilinks]]` in Obsidian and use the graph view to see how it all connects.
