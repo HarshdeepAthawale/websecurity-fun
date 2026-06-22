@@ -24,6 +24,7 @@ Reading a real report is different from reading a textbook. The textbook says "C
 | [[CS-05-Information-Disclosure-Chain]] | ASP.NET Verbose Errors → Recon Escalation | Information Disclosure | P3 / MEDIUM | Info disclosure isn't just "low severity." Stack trace → targeted attack. |
 | [[CS-06-CORS-Misconfiguration]] | CORS Origin Reflection + Null Origin | CORS Misconfiguration | P4 / LOW | How to properly scope CORS impact. SameSite vs CORS nuance. |
 | [[CS-07-Real-Hunt-Recon-Methodology]] | Full Recon Session on a 5900-domain VDP | Methodology | — | What a real hunt actually looks like. How to prioritize. How to track findings. |
+| [[CS-08-Duplicate-Critical-RedBull-Directus]] | The Critical That Paid €0 — Red Bull Directus Duplicate | Broken Access Control + PII | Critical / 9.1 (closed Duplicate) | **Duplicate economics.** Default-config bugs are a race. Valid ≠ paid. Uniqueness vs speed. |
 
 ---
 
@@ -45,7 +46,8 @@ This is called **lateral recon** — using what you found to look for more.
 ## Skill Progression
 
 ```
-Level 1 → CS-05, CS-06       ← information disclosure + CORS; simple curl commands
+Level 1 → CS-05, CS-06, CS-08 ← info disclosure, CORS, duplicate economics; simple curl
+
 Level 2 → CS-01, CS-04       ← GraphQL recon; JS bundle analysis; brute force math
 Level 3 → CS-03              ← JWT internals; differential testing; understanding N/As
 Level 4 → CS-02              ← supply chain attack chains; dependency confusion
